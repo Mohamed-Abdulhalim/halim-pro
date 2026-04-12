@@ -41,7 +41,7 @@ export default function Hero() {
       </div>
 
       <div className={styles.stat1} aria-hidden="true">
-        <span className={styles.statNum}>346K+</span>
+        <span className={styles.statNum}>400K+</span>
         <span className={styles.statLabel}>verified records</span>
       </div>
 
