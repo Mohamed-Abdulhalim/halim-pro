@@ -37,9 +37,9 @@ export default function About() {
               <span className={styles.platformLabel}>find me on</span>
               <div className={styles.platformLinks}>
                 {[
-                  { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~01b7a9e9b4e3b8f9a1' },
+                  { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~01d5c3c0ed52285018' },
                   { label: 'GitHub', href: 'https://github.com/Mohamed-Abdulhalim' },
-                  { label: 'LinkedIn', href: 'https://linkedin.com/in/mohamedalim' },
+                  { label: 'LinkedIn', href: 'https://linkedin.com/in/halim99' },
                 ].map(p => (
                   <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer" className={styles.platformLink}>
                     {p.label} ↗
