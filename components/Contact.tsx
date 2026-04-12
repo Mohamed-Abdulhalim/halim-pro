@@ -13,8 +13,8 @@ export default function Contact() {
           Email works fine — I respond within 24 hours.
         </p>
         <div className={styles.actions}>
-          <a href="mailto:m@halim.pro" className={styles.primary}>
-            m@halim.pro
+          <a href="mailto:mohamed@halim.pro" className={styles.primary}>
+            mohamed@halim.pro
           </a>
           <a
             href="https://www.upwork.com/freelancers/~01b7a9e9b4e3b8f9a1"
