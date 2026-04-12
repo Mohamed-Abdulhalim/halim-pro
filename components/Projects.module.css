@@ -1,0 +1,131 @@
+.section {
+  padding: 6rem 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.inner { max-width: 1100px; margin: 0 auto; }
+
+.header { margin-bottom: 3rem; }
+
+.label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.8px;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: var(--display);
+  font-size: clamp(22px, 3.5vw, 36px);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 2rem;
+  background: var(--bg-2);
+  transition: background 0.25s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: var(--card-glow, var(--bg-3));
+  border-color: var(--card-border);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardName {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--card-text, var(--text));
+  letter-spacing: -0.3px;
+}
+
+.cardLink {
+  font-size: 16px;
+  color: var(--text-3);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.card:hover .cardLink {
+  color: var(--card-text, var(--text));
+  transform: translate(2px, -2px);
+}
+
+.tagline {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-2);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.desc {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-3);
+  line-height: 1.8;
+  flex: 1;
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.metric {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--card-text, var(--text-2));
+  background: var(--card-bg, rgba(255,255,255,0.04));
+  padding: 3px 8px;
+  border-radius: 2px;
+  letter-spacing: 0.3px;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-3);
+  letter-spacing: 0.3px;
+}
+
+.tag::before { content: '#'; opacity: 0.4; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .section { padding: 4rem 1.25rem; }
+}
