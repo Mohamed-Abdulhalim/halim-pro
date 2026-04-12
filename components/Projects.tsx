@@ -27,7 +27,7 @@ const projects = [
     tagline: 'Commodity intelligence dashboard.',
     desc: 'A Flask-based market intelligence tool with automated commodity forecasting, price delta tracking, and a 294-entry backtested track record. Framed as a consulting portfolio piece, not a signal product.',
     stack: ['Flask', 'Python', 'yfinance', 'Vercel', 'Supabase'],
-    link: 'https://signals-forecast.vercel.app',
+    link: 'https://edgepulse.halim.pro',
     accent: 'amber',
     metrics: ['294 track records', '5 live signals', 'auto-refresh'],
   },
