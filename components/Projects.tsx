@@ -15,7 +15,7 @@ const projects = [
     id: 'cashrunway',
     name: 'CashRunway',
     tagline: 'Cash flow intelligence for bookkeepers.',
-    desc: 'A Next.js SaaS tool with full Xero OAuth integration. Gives bookkeepers a live cash flow runway view that Xero's native UI doesn't provide. Targets the Xero App Marketplace.',
+    desc: "A Next.js SaaS tool with full Xero OAuth integration. Gives bookkeepers a live cash flow runway view that Xero's native UI doesn't provide. Targets the Xero App Marketplace.",
     stack: ['Next.js', 'Xero OAuth', 'Supabase', 'TypeScript'],
     link: 'https://cashrunway.halim.pro',
     accent: 'blue',
