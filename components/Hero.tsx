@@ -12,18 +12,19 @@ export default function Hero() {
         </div>
 
         <h1 className={styles.headline}>
-          <span className={styles.line1}>Data Operations</span>
-          <span className={styles.line2}>& Automation</span>
+          <span className={styles.line1}>Workflow</span>
+          <span className={styles.line2}>Automation</span>
           <span className={styles.line3}>Engineer<span className={styles.accent}>.</span></span>
         </h1>
 
         <p className={styles.sub}>
-          ETL pipelines, automation systems, and full-stack tools that run unattended and scale.
-          400K+ records in production. Cairo-based, remote-first, async-preferred.
+          Connecting apps, eliminating manual processes, and building trigger-based systems
+          that run unattended. n8n, Make, Zapier, and custom Python — whatever the job needs.
+          Cairo-based, remote-first, async-preferred.
         </p>
 
         <div className={styles.stack}>
-          {['Python', 'Next.js', 'Flask', 'Supabase', 'Google Apps Script', 'AppSheet'].map(t => (
+          {['n8n', 'Make.com', 'Zapier', 'Python', 'REST APIs', 'Google Apps Script', 'Supabase', 'Next.js'].map(t => (
             <span key={t} className={styles.pill}>{t}</span>
           ))}
         </div>
@@ -41,8 +42,8 @@ export default function Hero() {
       </div>
 
       <div className={styles.stat1} aria-hidden="true">
-        <span className={styles.statNum}>400K+</span>
-        <span className={styles.statLabel}>verified records</span>
+        <span className={styles.statNum}>50+</span>
+        <span className={styles.statLabel}>workflows built</span>
       </div>
 
       <div className={styles.stat2} aria-hidden="true">
