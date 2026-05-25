@@ -2,11 +2,11 @@ import styles from './Work.module.css'
 
 const work = [
   {
-    client: 'عتاد (3tadksa.com)',
-    role: 'E-commerce Redesign',
-    platform: 'Salla',
-    desc: 'Full storefront redesign for a heavy truck parts distributor on the Salla platform. Delivered a complete visual overhaul with improved navigation, product structure, and mobile experience.',
-    tags: ['Salla', 'E-commerce', 'UI/UX'],
+    client: 'Peaky Scouts / Datalytics',
+    role: 'Candidate Routing Automation',
+    platform: 'Google Sheets',
+    desc: 'Built a Google Apps Script automation that eliminated a manual nightly process entirely — candidate routing between a Master System sheet and multiple client sheets, running unattended on schedule. Zero human steps remaining.',
+    tags: ['Google Apps Script', 'Workflow Automation', 'Sheets'],
     status: 'completed',
   },
   {
@@ -16,14 +16,13 @@ const work = [
     desc: 'Designed and built a hierarchical role-based portal from scratch, serving 300+ users across a five-tier organizational structure. Custom permission system, dynamic dashboards, and multi-sheet data orchestration — all in Google Apps Script.',
     tags: ['Google Apps Script', 'RBAC', 'Automation', '300+ users'],
     status: 'case study',
-    note: 'Portfolio reconstruction in progress.',
   },
   {
-    client: 'Peaky Scouts / Datalytics',
-    role: 'Candidate Routing Automation',
-    platform: 'Google Sheets',
-    desc: 'Built a Google Apps Script automation to replace manual nightly candidate routing between a Master System sheet and multiple client sheets. Eliminated a daily manual process entirely.',
-    tags: ['Google Apps Script', 'ETL', 'Sheets Automation'],
+    client: 'عتاد (3tadksa.com)',
+    role: 'E-commerce Redesign',
+    platform: 'Salla',
+    desc: 'Full storefront redesign for a heavy truck parts distributor on the Salla platform. Delivered a complete visual overhaul with improved navigation, product structure, and mobile experience.',
+    tags: ['Salla', 'E-commerce', 'UI/UX'],
     status: 'completed',
   },
 ]
@@ -54,7 +53,6 @@ export default function Work() {
                   </span>
                 </div>
                 <p className={styles.desc}>{w.desc}</p>
-                {w.note && <p className={styles.note}>{w.note}</p>}
                 <div className={styles.tags}>
                   {w.tags.map(t => (
                     <span key={t} className={styles.tag}>{t}</span>
