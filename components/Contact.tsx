@@ -9,7 +9,7 @@ export default function Contact() {
           Let's work together<span className={styles.accent}>.</span>
         </h2>
         <p className={styles.sub}>
-          I'm available for freelance automation, ETL, and full-stack projects. No calls required.
+          Available for workflow automation, app integrations, and ETL projects. No calls required.
           Email works fine — I respond within 24 hours.
         </p>
         <div className={styles.actions}>
