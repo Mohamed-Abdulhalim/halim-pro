@@ -15,7 +15,7 @@ const work = [
     platform: 'Google Workspace',
     desc: 'Designed and built a hierarchical role-based portal from scratch, serving 300+ users across a five-tier organizational structure. Custom permission system, dynamic dashboards, and multi-sheet data orchestration — all in Google Apps Script.',
     tags: ['Google Apps Script', 'RBAC', 'Automation', '300+ users'],
-    status: 'case study',
+    status: 'completed',
   },
   {
   client: 'E-commerce Client',
