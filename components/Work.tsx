@@ -18,6 +18,22 @@ const work = [
     status: 'case study',
   },
   {
+  client: 'E-commerce Client',
+  role: 'Zero-Touch Fulfillment Automation',
+  platform: 'n8n',
+  desc: 'Built an event-driven orchestration layer across Shopify, Stripe, and HubSpot. Handles payment verification, automatic retry on failed payments, CRM upsert logic, and warehouse Slack alerts — zero human touchpoints in the primary path, sub-200ms order-to-warehouse latency.',
+  tags: ['n8n', 'Shopify', 'Stripe', 'HubSpot', 'Webhook Automation'],
+  status: 'case study',
+},
+{
+  client: 'B2B Sales Client',
+  role: 'AI Lead Qualification Pipeline',
+  platform: 'n8n',
+  desc: 'Engineered an AI-powered lead scoring engine that enriches inbound leads via Hunter.io, scores them against an ICP using a structured LLM prompt, and routes qualified leads to HubSpot with a Slack alert — unqualified leads go to a nurture queue in Airtable. Sub-second end-to-end, no manual review.',
+  tags: ['n8n', 'HubSpot', 'Airtable', 'AI Scoring', 'Webhook Automation'],
+  status: 'case study',
+},
+  {
     client: 'عتاد (3tadksa.com)',
     role: 'E-commerce Redesign',
     platform: 'Salla',
