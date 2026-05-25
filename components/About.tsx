@@ -6,8 +6,8 @@ const pillars = [
     body: 'Scrape, clean, enrich, push. Phone-verified records at scale. Unattended runs on GitHub Actions or cron. Full pipeline architecture design.',
   },
   {
-    title: 'Automation systems',
-    body: 'Google Apps Script portals with role-based access, multi-sheet orchestration, and org-spanning workflows. Replaces manual nightly processes permanently.',
+    title: 'Workflow automation',
+    body: 'Connecting apps and replacing manual processes with trigger-based workflows. n8n, Make.com, and Zapier as the execution layer — or custom Python where no-code hits its ceiling. If a human is doing it on a schedule, it can probably be automated.',
   },
   {
     title: 'Full-stack tools',
@@ -28,7 +28,7 @@ export default function About() {
               Cairo.
             </h2>
             <p className={styles.bio}>
-              I'm Mohamed, a freelance data and automation engineer. My background spans BPO operations at Concentrix (Microsoft Azure) and Transcom (TUI UK), a degree in Management Information Systems, and several years of independent client work across Upwork and direct contracts.
+              I'm Mohamed, a freelance automation engineer. I build workflow automation across n8n, Make.com, and Zapier, and write custom Python where the no-code tools run out of road. My background spans BPO operations at Concentrix (Microsoft Azure) and Transcom (TUI UK), a degree in Management Information Systems, and several years of independent client work across Upwork and direct contracts.
             </p>
             <p className={styles.bio}>
               I prefer text-based async communication. I work across time zones without friction. I don't bill by the hour for things that should run automatically.
