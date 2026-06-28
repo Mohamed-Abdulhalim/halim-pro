@@ -12,8 +12,8 @@ export default function Hero() {
         </div>
 
         <h1 className={styles.headline}>
-          <span className={styles.line1}>Workflow</span>
-          <span className={styles.line2}>Automation</span>
+          <span className={styles.line1}>Workflow &</span>
+          <span className={styles.line2}>AI Integration</span>
           <span className={styles.line3}>Engineer<span className={styles.accent}>.</span></span>
         </h1>
 
