@@ -192,6 +192,15 @@
   z-index: 1;
   animation: fadeUp 0.8s 0.7s ease both;
 }
+.stat3 {
+  position: absolute;
+  right: 6%;
+  bottom: 42%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  animation: fadeUp 0.8s 0.7s ease both;
+}
 
 .stat1 { bottom: 30%; }
 .stat2 { bottom: 18%; }
