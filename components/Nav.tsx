@@ -18,6 +18,7 @@ export default function Nav() {
       </a>
       <div className={styles.links}>
         <a href="#projects">projects</a>
+        <a href="#workflows">workflows</a>
         <a href="#work">work</a>
         <a href="#about">about</a>
         <a href="#contact" className={styles.cta}>get in touch</a>
