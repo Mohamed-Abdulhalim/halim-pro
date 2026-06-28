@@ -17,7 +17,7 @@ export default function Contact() {
             mohamed@halim.pro
           </a>
           <a
-            href="https://www.upwork.com/freelancers/~01b7a9e9b4e3b8f9a1"
+            href="https://www.upwork.com/freelancers/~01d5c3c0ed52285018"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.secondary}
