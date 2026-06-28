@@ -93,19 +93,19 @@
 }
 
 .line1 {
-  font-size: clamp(42px, 7vw, 80px);
+  font-size: clamp(32px, 5vw, 60px);
   color: var(--text);
   animation: fadeUp 0.6s 0.1s ease both;
 }
 
 .line2 {
-  font-size: clamp(42px, 7vw, 80px);
+  font-size: clamp(32px, 5vw, 60px);
   color: var(--text);
   animation: fadeUp 0.6s 0.2s ease both;
 }
 
 .line3 {
-  font-size: clamp(42px, 7vw, 80px);
+  font-size: clamp(32px, 5vw, 60px);
   color: var(--text-3);
   animation: fadeUp 0.6s 0.3s ease both;
 }
