@@ -50,6 +50,11 @@ export default function Hero() {
         <span className={styles.statNum}>5+</span>
         <span className={styles.statLabel}>live systems</span>
       </div>
+
+      <div className={styles.stat3} aria-hidden="true">
+        <span className={styles.statNum}>5K+</span>
+        <span className={styles.statLabel}>hours saved/yr</span>
+      </div>
     </section>
   )
 }
