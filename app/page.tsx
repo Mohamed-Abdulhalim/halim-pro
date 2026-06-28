@@ -5,6 +5,7 @@ import Work from '@/components/Work'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Workflows from '@/components/Workflows'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Projects />
+      <Workflows />
       <Work />
       <About />
       <Contact />
