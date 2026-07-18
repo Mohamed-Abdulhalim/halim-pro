@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Cursor from '@/components/Cursor'
+import SmoothScroll from '@/components/SmoothScroll'
 
 export const metadata: Metadata = {
   title: 'Mohamed Abdulhalim — Workflow Automation Engineer',
@@ -27,11 +28,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark">
       <body>
         <Cursor />
-        <img src="https://halim99-n8n.hf.space/webhook/22bf8674-22f3-4616-8e0f-b13e2a2f08fe" width="1" height="1" style={{display:'none'}} />
-        {children}
+        <img src="https://halim99-n8n.hf.space/webhook/22bf8674-22f3-4616-8e0f-b13e2a2f08fe" width="1" height="1" style={{ display: 'none' }} alt="" />
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   )
