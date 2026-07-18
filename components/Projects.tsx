@@ -1,5 +1,6 @@
 import styles from './Projects.module.css'
 import AnimateIn from './AnimateIn'
+
 const projects = [
   {
     id: 'leadsignal',
@@ -40,53 +41,58 @@ const accentColors: Record<string, { border: string; glow: string; text: string;
 }
 
 export default function Projects() {
+  const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    const x = ((e.clientX - rect.left) / rect.width) * 100
+    const y = ((e.clientY - rect.top) / rect.height) * 100
+    e.currentTarget.style.setProperty('--mouse-x', `${x}%`)
+    e.currentTarget.style.setProperty('--mouse-y', `${y}%`)
+  }
+
   return (
     <section className={styles.section} id="projects">
       <div className={styles.inner}>
         <AnimateIn>
-        <div className={styles.header}>
-          <span className={styles.label}>// live projects</span>
-          <h2 className={styles.title}>Things I built that run in production.</h2>
-        </div>
+          <div className={styles.header}>
+            <span className={styles.label}>// live projects</span>
+            <h2 className={styles.title}>Things I built that run in production.</h2>
+          </div>
         </AnimateIn>
         <div className={styles.grid}>
-          {projects.map((p) => {
+          {projects.map((p, i) => {
             const c = accentColors[p.accent]
             return (
               <AnimateIn key={p.id} delay={i * 0.1}>
-              <a
-                key={p.id}
-                href={p.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.card}
-                style={{
-                  '--card-border': c.border,
-                  '--card-glow': c.glow,
-                  '--card-text': c.text,
-                  '--card-bg': c.bg,
-                } as React.CSSProperties}
-              >
-                <div className={styles.cardTop}>
-                  <div className={styles.cardName}>{p.name}</div>
-                  <div className={styles.cardLink}>↗</div>
-                </div>
-
-                <p className={styles.tagline}>{p.tagline}</p>
-                <p className={styles.desc}>{p.desc}</p>
-
-                <div className={styles.metrics}>
-                  {p.metrics.map(m => (
-                    <span key={m} className={styles.metric}>{m}</span>
-                  ))}
-                </div>
-
-                <div className={styles.stack}>
-                  {p.stack.map(s => (
-                    <span key={s} className={styles.tag}>{s}</span>
-                  ))}
-                </div>
-              </a>
+                
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.card}
+                  style={{
+                    '--card-border': c.border,
+                    '--card-glow': c.glow,
+                    '--card-text': c.text,
+                    '--card-bg': c.bg,
+                  } as React.CSSProperties}
+                  onMouseMove={handleMouseMove}
+                >
+                  <div className={styles.cardTop}>
+                    <div className={styles.cardName}>{p.name}</div>
+                    <div className={styles.cardLink}>↗</div>
+                  </div>
+                  <p className={styles.tagline}>{p.tagline}</p>
+                  <p className={styles.desc}>{p.desc}</p>
+                  <div className={styles.metrics}>
+                    {p.metrics.map(m => (
+                      <span key={m} className={styles.metric}>{m}</span>
+                    ))}
+                  </div>
+                  <div className={styles.stack}>
+                    {p.stack.map(s => (
+                      <span key={s} className={styles.tag}>{s}</span>
+                    ))}
+                  </div>
+                </a>
               </AnimateIn>
             )
           })}
