@@ -63,7 +63,7 @@ export default function Projects() {
             const c = accentColors[p.accent]
             return (
               <AnimateIn key={p.id} delay={i * 0.1}>
-                
+                <a
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
