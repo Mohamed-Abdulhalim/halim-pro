@@ -3,13 +3,15 @@ import { useState, useEffect } from 'react'
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const saved = localStorage.getItem('theme') as 'dark' | 'light' | null
-    if (saved) {
-      setTheme(saved)
-      document.documentElement.setAttribute('data-theme', saved)
-    }
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const initial = saved || (prefersDark ? 'dark' : 'light')
+    setTheme(initial)
+    document.documentElement.setAttribute('data-theme', initial)
   }, [])
 
   const toggle = () => {
@@ -19,9 +21,12 @@ export default function ThemeToggle() {
     localStorage.setItem('theme', next)
   }
 
+  if (!mounted) return <div style={{ width: 60, height: 28 }} />
+
   return (
     <button
       onClick={toggle}
+      aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
       style={{
         background: 'none',
         border: '1px solid var(--border)',
@@ -32,6 +37,7 @@ export default function ThemeToggle() {
         fontSize: '11px',
         cursor: 'pointer',
         transition: 'all 0.2s',
+        letterSpacing: '0.5px',
       }}
       onMouseEnter={e => {
         e.currentTarget.style.borderColor = 'var(--border-hover)'
