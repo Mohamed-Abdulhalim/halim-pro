@@ -1,7 +1,21 @@
 'use client'
 import { useRef, useState, ReactNode } from 'react'
 
-export default function MagneticButton({ children, className }: { children: ReactNode; className?: string }) {
+export default function MagneticButton({
+  children,
+  className,
+  href,
+  target,
+  rel,
+  onClick,
+}: {
+  children: ReactNode
+  className?: string
+  href?: string
+  target?: string
+  rel?: string
+  onClick?: () => void
+}) {
   const ref = useRef<HTMLAnchorElement>(null)
   const [pos, setPos] = useState({ x: 0, y: 0 })
 
@@ -12,12 +26,15 @@ export default function MagneticButton({ children, className }: { children: Reac
     const y = (e.clientY - rect.top - rect.height / 2) * 0.3
     setPos({ x, y })
   }
-
   const onLeave = () => setPos({ x: 0, y: 0 })
 
   return (
-    <a
+    
       ref={ref}
+      href={href}
+      target={target}
+      rel={rel}
+      onClick={onClick}
       className={className}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
