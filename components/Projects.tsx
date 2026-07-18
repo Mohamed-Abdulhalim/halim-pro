@@ -1,5 +1,5 @@
 import styles from './Projects.module.css'
-
+import AnimateIn from './AnimateIn'
 const projects = [
   {
     id: 'leadsignal',
@@ -43,15 +43,17 @@ export default function Projects() {
   return (
     <section className={styles.section} id="projects">
       <div className={styles.inner}>
+        <AnimateIn>
         <div className={styles.header}>
           <span className={styles.label}>// live projects</span>
           <h2 className={styles.title}>Things I built that run in production.</h2>
         </div>
-
+        </AnimateIn>
         <div className={styles.grid}>
           {projects.map((p) => {
             const c = accentColors[p.accent]
             return (
+              <AnimateIn key={p.id} delay={i * 0.1}>
               <a
                 key={p.id}
                 href={p.link}
@@ -85,6 +87,7 @@ export default function Projects() {
                   ))}
                 </div>
               </a>
+              </AnimateIn>
             )
           })}
         </div>
