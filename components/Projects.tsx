@@ -1,3 +1,4 @@
+'use client'
 import styles from './Projects.module.css'
 import AnimateIn from './AnimateIn'
 
