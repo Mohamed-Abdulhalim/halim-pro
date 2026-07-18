@@ -1,12 +1,16 @@
-
 'use client'
 import { useEffect, useState } from 'react'
 
 export default function Cursor() {
   const [pos, setPos] = useState({ x: 0, y: 0 })
   const [trail, setTrail] = useState<{ x: number; y: number; id: number }[]>([])
+  const [isTouch, setIsTouch] = useState(false)
 
   useEffect(() => {
+    if ('ontouchstart' in window) {
+      setIsTouch(true)
+      return
+    }
     const onMove = (e: MouseEvent) => {
       setPos({ x: e.clientX, y: e.clientY })
       setTrail(prev => [...prev.slice(-5), { x: e.clientX, y: e.clientY, id: Date.now() }])
@@ -15,8 +19,7 @@ export default function Cursor() {
     return () => window.removeEventListener('mousemove', onMove)
   }, [])
 
-  // Hide on touch devices
-  if (typeof window !== 'undefined' && 'ontouchstart' in window) return null
+  if (isTouch) return null
 
   return (
     <>
