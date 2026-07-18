@@ -29,7 +29,7 @@ export default function MagneticButton({
   const onLeave = () => setPos({ x: 0, y: 0 })
 
   return (
-    
+    <a
       ref={ref}
       href={href}
       target={target}
