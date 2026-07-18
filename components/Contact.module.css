@@ -2,13 +2,11 @@
   padding: 7rem 2.5rem;
   border-top: 1px solid var(--border);
 }
-
 .inner {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
-
 .label {
   font-family: var(--mono);
   font-size: 11px;
@@ -17,7 +15,6 @@
   display: block;
   margin-bottom: 1.25rem;
 }
-
 .title {
   font-family: var(--display);
   font-size: clamp(36px, 6vw, 64px);
@@ -27,9 +24,7 @@
   line-height: 1.0;
   margin-bottom: 1.5rem;
 }
-
 .accent { color: var(--accent); }
-
 .sub {
   font-family: var(--mono);
   font-size: 13px;
@@ -38,7 +33,6 @@
   max-width: 480px;
   margin: 0 auto 2.5rem;
 }
-
 .actions {
   display: flex;
   justify-content: center;
@@ -46,7 +40,6 @@
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
-
 .primary {
   font-family: var(--mono);
   font-size: 13px;
@@ -56,11 +49,12 @@
   padding: 12px 28px;
   border-radius: 2px;
   font-weight: 500;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s, transform 0.15s;
+  border: none;
+  cursor: none;
 }
-
 .primary:hover { opacity: 0.88; }
-
+.primary:active { transform: scale(0.98); }
 .secondary {
   font-family: var(--mono);
   font-size: 13px;
@@ -70,12 +64,10 @@
   border-radius: 2px;
   transition: color 0.2s, border-color 0.2s;
 }
-
 .secondary:hover {
   color: var(--text);
   border-color: var(--border-hover);
 }
-
 .note {
   font-family: var(--mono);
   font-size: 10px;
@@ -83,7 +75,6 @@
   letter-spacing: 0.8px;
   text-transform: uppercase;
 }
-
 @media (max-width: 600px) {
   .section { padding: 4rem 1.25rem; }
 }
