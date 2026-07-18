@@ -1,4 +1,5 @@
 import styles from './Workflows.module.css'
+import AnimateIn from './AnimateIn'
 
 const workflows = [
   {
@@ -49,27 +50,31 @@ export default function Workflows() {
   return (
     <section className={styles.section} id="workflows">
       <div className={styles.inner}>
-        <div className={styles.header}>
-          <span className={styles.label}>// workflows</span>
-          <h2 className={styles.title}>Automations I've designed and shipped.</h2>
-        </div>
+        <AnimateIn>
+          <div className={styles.header}>
+            <span className={styles.label}>// workflows</span>
+            <h2 className={styles.title}>Automations I've designed and shipped.</h2>
+          </div>
+        </AnimateIn>
         <div className={styles.grid}>
           {workflows.map((w, i) => (
-            <div key={i} className={styles.card}>
-              <div className={styles.cardName}>{w.name}</div>
-              <p className={styles.tagline}>{w.tagline}</p>
-              <p className={styles.desc}>{w.desc}</p>
-              <div className={styles.metrics}>
-                {w.metrics.map(m => (
-                  <span key={m} className={styles.metric}>{m}</span>
-                ))}
+            <AnimateIn key={i} delay={i * 0.08}>
+              <div className={styles.card}>
+                <div className={styles.cardName}>{w.name}</div>
+                <p className={styles.tagline}>{w.tagline}</p>
+                <p className={styles.desc}>{w.desc}</p>
+                <div className={styles.metrics}>
+                  {w.metrics.map(m => (
+                    <span key={m} className={styles.metric}>{m}</span>
+                  ))}
+                </div>
+                <div className={styles.stack}>
+                  {w.stack.map(s => (
+                    <span key={s} className={styles.tag}>{s}</span>
+                  ))}
+                </div>
               </div>
-              <div className={styles.stack}>
-                {w.stack.map(s => (
-                  <span key={s} className={styles.tag}>{s}</span>
-                ))}
-              </div>
-            </div>
+            </AnimateIn>
           ))}
         </div>
       </div>
