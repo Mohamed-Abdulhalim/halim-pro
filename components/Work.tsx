@@ -34,14 +34,6 @@ const work = [
     tags: ['n8n', 'AI Agent', 'Information Extraction', 'WhatsApp', 'Lead Scoring'],
     status: 'case study',
   },
-  {
-    client: 'عتاد (3tadksa.com)',
-    role: 'E-commerce Redesign',
-    platform: 'Salla',
-    desc: 'Full storefront redesign for a heavy truck parts distributor on the Salla platform. Delivered a complete visual overhaul with improved navigation, product structure, and mobile experience.',
-    tags: ['Salla', 'E-commerce', 'UI/UX'],
-    status: 'completed',
-  },
 ]
 
 export default function Work() {
