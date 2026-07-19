@@ -3,25 +3,25 @@ import AnimateIn from './AnimateIn'
 
 const workflows = [
   {
-    name: 'LinkedIn Job Scraper',
-    tagline: 'Daily job alerts, zero manual effort.',
-    desc: 'Apify-powered scraper triggered on a schedule via n8n. Fetches fresh LinkedIn listings, aggregates results, and delivers a formatted HTML digest by email every morning.',
-    stack: ['n8n', 'Apify', 'Gmail API'],
-    metrics: ['daily schedule', 'email digest', 'zero touch'],
+    name: 'Job Market Intelligence Pipeline',
+    tagline: 'Raw listings in, categorized market signal out.',
+    desc: 'Scheduled pipeline pulls fresh listings, deduplicates by company + title, then runs each batch through an LLM classifier that tags category, top skills, and spam/anomaly flags. Results land in a running dataset and roll up into a weekly digest email with category breakdowns.',
+    stack: ['n8n', 'Gemini', 'Google Sheets', 'Gmail API'],
+    metrics: ['AI-categorized', 'anomaly detection', 'weekly digest'],
   },
   {
     name: 'Lead Intelligence Pipeline',
-    tagline: 'Inbound leads enriched and routed automatically.',
-    desc: 'Tally form submission triggers enrichment via Hunter.io, LLM-based ICP scoring, HubSpot CRM upsert, and Slack alert for qualified leads. Unqualified leads route to Airtable nurture queue.',
-    stack: ['n8n', 'Hunter.io', 'HubSpot', 'Airtable', 'OpenAI'],
-    metrics: ['sub-second', 'AI scoring', 'auto-routing'],
+    tagline: 'Inbound leads enriched and briefed automatically.',
+    desc: 'Form submission triggers contact enrichment via Hunter.io, a recent-news lookup on the company, and an LLM-generated outreach angle tailored to that news. Everything lands in a CRM record and an internal email brief, ready to send with zero manual research.',
+    stack: ['n8n', 'Hunter.io', 'Groq', 'Notion', 'Gmail API'],
+    metrics: ['auto-enriched', 'news-aware', 'zero research time'],
   },
   {
     name: 'Client Onboarding Automation',
     tagline: 'New client intake without the back-and-forth.',
-    desc: 'Tally form triggers a full onboarding sequence: contract generation, welcome email, CRM record creation, and internal Slack notification. All steps run unattended from a single form submission.',
-    stack: ['n8n', 'Tally', 'Gmail API', 'Slack'],
-    metrics: ['single trigger', 'multi-step', 'no human steps'],
+    desc: 'Form submission triggers a full onboarding sequence: CRM record creation, an AI-drafted personalized welcome email, and an auto-scheduled kickoff call on the calendar with the client pre-attached. One submission, zero manual coordination.',
+    stack: ['n8n', 'Notion', 'Gemini', 'Google Calendar', 'Gmail API'],
+    metrics: ['single trigger', 'auto-scheduled', 'no human steps'],
   },
   {
     name: 'Healthcare Operations System',
