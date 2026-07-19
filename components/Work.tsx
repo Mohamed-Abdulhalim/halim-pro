@@ -27,11 +27,11 @@ const work = [
     status: 'case study',
   },
   {
-    client: 'B2B Sales Client',
-    role: 'AI Lead Qualification Pipeline',
+    client: 'Education Consultancy Client',
+    role: 'AI Study-Abroad Advisor Agent',
     platform: 'n8n',
-    desc: 'Engineered an AI-powered lead scoring engine that enriches inbound leads via Hunter.io, scores them against an ICP using a structured LLM prompt, and routes qualified leads to HubSpot with a Slack alert — unqualified leads go to a nurture queue in Airtable. Sub-second end-to-end, no manual review.',
-    tags: ['n8n', 'HubSpot', 'Airtable', 'AI Scoring', 'Webhook Automation'],
+    desc: 'Built a conversational AI agent that qualifies inbound student leads over chat — nationality, qualifications, program level, budget, and timeline — through natural back-and-forth rather than a rigid form. Structured field extraction runs in parallel, auto-classifies lead heat, logs everything to a live sheet, and hands hot leads straight to a human via instant WhatsApp alert.',
+    tags: ['n8n', 'AI Agent', 'Information Extraction', 'WhatsApp', 'Lead Scoring'],
     status: 'case study',
   },
   {
