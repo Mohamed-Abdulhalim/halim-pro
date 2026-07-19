@@ -29,6 +29,7 @@
   overflow: hidden;
 }
 .card {
+  min-height: 320px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -98,6 +99,10 @@
   color: var(--text-3);
   line-height: 1.8;
   flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .metrics {
   display: flex;
