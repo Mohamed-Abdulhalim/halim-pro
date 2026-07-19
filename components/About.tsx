@@ -11,8 +11,8 @@ const pillars = [
     body: 'Connecting apps and replacing manual processes with trigger-based workflows. n8n, Make.com, and Zapier as the execution layer — or custom Python where no-code hits its ceiling. If a human is doing it on a schedule, it can probably be automated.',
   },
   {
-    title: 'Full-stack tools',
-    body: 'Flask and Next.js apps backed by Supabase. OAuth integrations, REST APIs, production deployments. Tools that bookkeepers and operators actually use.',
+    title: 'AI agents & RAG',
+    body: 'Conversational agents that qualify leads, extract structured data, and hand off to humans at the right moment. RAG pipelines on vector stores for domain-specific Q&A. Gemini, Groq, and OpenAI as the reasoning layer.',
   },
 ]
 
