@@ -29,6 +29,7 @@
   overflow: hidden;
 }
 .card {
+  height: 100%;
   min-height: 320px;
   position: relative;
   overflow: hidden;
