@@ -11,19 +11,16 @@
   transition: background 0.3s, border-bottom 0.3s, padding 0.3s;
 }
 .nav.scrolled {
-  background: rgba(10,10,8,0.92);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   padding: 1rem 2.5rem;
 }
-[data-theme="light"] .nav.scrolled {
-  background: rgba(245,245,240,0.92);
-}
 .logo {
   font-family: var(--display);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text);
   letter-spacing: -0.3px;
   transition: opacity 0.2s;
@@ -57,7 +54,7 @@
 .links a:hover::after { width: 100%; }
 .cta {
   color: var(--accent) !important;
-  border: 1px solid rgba(200,245,100,0.3);
+  border: 1px solid rgba(232,68,15,0.3);
   padding: 6px 14px;
   border-radius: 2px;
   transition: background 0.2s, border-color 0.2s !important;
@@ -115,7 +112,7 @@
 .mobileMenu a {
   font-family: var(--display);
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text);
   letter-spacing: -0.5px;
 }

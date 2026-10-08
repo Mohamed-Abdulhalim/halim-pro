@@ -15,7 +15,7 @@
 .title {
   font-family: var(--display);
   font-size: clamp(22px, 3.5vw, 36px);
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text);
   letter-spacing: -0.8px;
 }
@@ -47,7 +47,7 @@
   inset: 0;
   background: radial-gradient(
     600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(200,245,100,0.06),
+    rgba(232,68,15,0.06),
     transparent 40%
   );
   opacity: 0;
@@ -74,7 +74,7 @@
 .cardName {
   font-family: var(--display);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--card-text, var(--text));
   letter-spacing: -0.3px;
 }
@@ -97,7 +97,7 @@
 .desc {
   font-family: var(--mono);
   font-size: 12px;
-  color: var(--text-3);
+  color: var(--text-2);
   line-height: 1.8;
   flex: 1;
   display: -webkit-box;
