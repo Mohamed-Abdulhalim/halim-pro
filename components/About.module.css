@@ -24,7 +24,7 @@
 .title {
   font-family: var(--display);
   font-size: clamp(28px, 4vw, 48px);
-  font-weight: 800;
+  font-weight: 500;
   color: var(--text);
   letter-spacing: -1.5px;
   line-height: 1.05;
@@ -100,11 +100,32 @@
 .pillarBody {
   font-family: var(--mono);
   font-size: 12px;
-  color: var(--text-3);
+  color: var(--text-2);
   line-height: 1.8;
 }
 
 @media (max-width: 900px) {
   .section { padding: 4rem 1.25rem; }
   .grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+.title em {
+  font-style: italic;
+  color: var(--accent);
+}
+.certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1.5rem 0 0.5rem;
+}
+.cert {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text);
+  border: 1px solid var(--border-hover);
+  background: var(--bg);
+  padding: 4px 10px;
+  border-radius: 2px;
+  letter-spacing: 0.3px;
 }

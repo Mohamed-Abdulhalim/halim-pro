@@ -3,10 +3,18 @@ import AnimateIn from './AnimateIn'
 
 const work = [
   {
+    client: 'Education Consultancy Client',
+    role: 'AI Study-Abroad Advisor Agent',
+    platform: 'n8n',
+    desc: 'Built a conversational AI agent that qualifies inbound student leads over chat (nationality, qualifications, program level, budget, and timeline) through natural back-and-forth rather than a rigid form. Structured field extraction runs in parallel, auto-classifies lead heat, logs everything to a live sheet, and hands hot leads straight to a human via instant WhatsApp alert.',
+    tags: ['n8n', 'AI Agent', 'Information Extraction', 'WhatsApp', 'Lead Scoring'],
+    status: 'case study',
+  },
+  {
     client: 'Peaky Scouts / Datalytics',
     role: 'Candidate Routing Automation',
     platform: 'Google Sheets',
-    desc: 'Built a Google Apps Script automation that eliminated a manual nightly process entirely — candidate routing between a Master System sheet and multiple client sheets, running unattended on schedule. Zero human steps remaining.',
+    desc: 'Built a Google Apps Script automation that eliminated a manual nightly process entirely: candidate routing between a Master System sheet and multiple client sheets, running unattended on schedule. Zero human steps remaining.',
     tags: ['Google Apps Script', 'Workflow Automation', 'Sheets'],
     status: 'completed',
   },
@@ -14,7 +22,7 @@ const work = [
     client: 'Highspire / People Compass',
     role: 'Google Apps Script Portal',
     platform: 'Google Workspace',
-    desc: 'Designed and built a hierarchical role-based portal from scratch, serving 300+ users across a five-tier organizational structure. Custom permission system, dynamic dashboards, and multi-sheet data orchestration — all in Google Apps Script.',
+    desc: 'Designed and built a hierarchical role-based portal from scratch, serving 300+ users across a five-tier organizational structure. Custom permission system, dynamic dashboards, and multi-sheet data orchestration, all in Google Apps Script.',
     tags: ['Google Apps Script', 'RBAC', 'Automation', '300+ users'],
     status: 'completed',
   },
@@ -22,16 +30,8 @@ const work = [
     client: 'E-commerce Client',
     role: 'Zero-Touch Fulfillment Automation',
     platform: 'n8n',
-    desc: 'Built an event-driven orchestration layer across Shopify, Stripe, and HubSpot. Handles payment verification, automatic retry on failed payments, CRM upsert logic, and warehouse Slack alerts — zero human touchpoints in the primary path, sub-200ms order-to-warehouse latency.',
+    desc: 'Built an event-driven orchestration layer across Shopify, Stripe, and HubSpot. Handles payment verification, automatic retry on failed payments, CRM upsert logic, and warehouse Slack alerts. No human touchpoints in the primary path, from paid order to warehouse notification.',
     tags: ['n8n', 'Shopify', 'Stripe', 'HubSpot', 'Webhook Automation'],
-    status: 'case study',
-  },
-  {
-    client: 'Education Consultancy Client',
-    role: 'AI Study-Abroad Advisor Agent',
-    platform: 'n8n',
-    desc: 'Built a conversational AI agent that qualifies inbound student leads over chat — nationality, qualifications, program level, budget, and timeline — through natural back-and-forth rather than a rigid form. Structured field extraction runs in parallel, auto-classifies lead heat, logs everything to a live sheet, and hands hot leads straight to a human via instant WhatsApp alert.',
-    tags: ['n8n', 'AI Agent', 'Information Extraction', 'WhatsApp', 'Lead Scoring'],
     status: 'case study',
   },
 ]
@@ -42,8 +42,8 @@ export default function Work() {
       <div className={styles.inner}>
         <AnimateIn>
           <div className={styles.header}>
-            <span className={styles.label}>// client work</span>
-            <h2 className={styles.title}>Problems I've solved for real businesses.</h2>
+            <span className={styles.label}>// client work &amp; case studies</span>
+            <h2 className={styles.title}>Real operations problems, solved end to end.</h2>
           </div>
         </AnimateIn>
         <div className={styles.list}>

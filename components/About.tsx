@@ -3,18 +3,20 @@ import AnimateIn from './AnimateIn'
 
 const pillars = [
   {
-    title: 'Data pipelines',
-    body: 'Scrape, clean, enrich, push. Phone-verified records at scale. Unattended runs on GitHub Actions or cron. Full pipeline architecture design.',
+    title: 'AI agents & RAG',
+    body: 'Conversational agents that qualify leads, extract structured data, and hand off to a human at the right moment. RAG pipelines over your own documents for grounded Q&A. Gemini, Groq, and OpenAI as the reasoning layer.',
   },
   {
     title: 'Workflow automation',
-    body: 'Connecting apps and replacing manual processes with trigger-based workflows. n8n, Make.com, and Zapier as the execution layer — or custom Python where no-code hits its ceiling. If a human is doing it on a schedule, it can probably be automated.',
+    body: 'Replacing manual processes with trigger-based workflows across your apps. n8n, Make.com, and Zapier as the execution layer, or custom Python where no-code hits its ceiling. If a human does it on a schedule, it can probably be automated.',
   },
   {
-    title: 'AI agents & RAG',
-    body: 'Conversational agents that qualify leads, extract structured data, and hand off to humans at the right moment. RAG pipelines on vector stores for domain-specific Q&A. Gemini, Groq, and OpenAI as the reasoning layer.',
+    title: 'Data pipelines',
+    body: 'Scrape, clean, enrich, push. Verified records at scale, running unattended on GitHub Actions or cron, landing in Supabase where your team can actually use them.',
   },
 ]
+
+const certs = ['Zapier Silver Solution Partner', 'n8n Certified']
 
 export default function About() {
   return (
@@ -25,16 +27,21 @@ export default function About() {
             <div className={styles.left}>
               <span className={styles.label}>// about</span>
               <h2 className={styles.title}>
-                Remote engineer.<br />
+                Agents engineer.<br />
                 Async-first.<br />
-                Cairo.
+                <em>Cairo.</em>
               </h2>
               <p className={styles.bio}>
-                I'm Mohamed, a freelance automation engineer. I build workflow automation across n8n, Make.com, and Zapier, and write custom Python where the no-code tools run out of road. My background spans BPO operations at Concentrix (Microsoft Azure) and Transcom (TUI UK), a degree in Management Information Systems, and several years of independent client work across Upwork and direct contracts.
+                I'm Mohamed, an AI agents and automation engineer. I design agents and workflows that remove manual work from real operations, using n8n, Make.com, and Zapier where they fit and custom Python where the no-code tools run out of road. My background spans BPO operations at Concentrix (Microsoft Azure) and Transcom (TUI UK), a degree in Management Information Systems, and several years of independent client work across Upwork and direct contracts.
               </p>
               <p className={styles.bio}>
                 I prefer text-based async communication. I work across time zones without friction. I don't bill by the hour for things that should run automatically.
               </p>
+              <div className={styles.certs}>
+                {certs.map(c => (
+                  <span key={c} className={styles.cert}>✓ {c}</span>
+                ))}
+              </div>
               <div className={styles.platforms}>
                 <span className={styles.platformLabel}>find me on</span>
                 <div className={styles.platformLinks}>

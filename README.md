@@ -1,6 +1,6 @@
 # halim.pro
 
-Portfolio site for Mohamed Abdulhalim — Data Operations & Automation Engineer.
+Portfolio site for Mohamed Abdulhalim, AI Agents & Automation Engineer.
 
 Built with Next.js 14 (App Router), TypeScript, CSS Modules. No external UI libraries.
 
@@ -8,7 +8,8 @@ Built with Next.js 14 (App Router), TypeScript, CSS Modules. No external UI libr
 
 - **Framework**: Next.js 14 (App Router)
 - **Styling**: CSS Modules + CSS custom properties
-- **Fonts**: Syne (display) + DM Mono (body) via Google Fonts
+- **Fonts**: Fraunces (display) + JetBrains Mono (body) via Google Fonts
+- **Analytics**: Vercel Web Analytics (cookieless; enable it in the Vercel project's Analytics tab)
 - **Hosting**: Vercel
 - **Domain**: halim.pro
 
@@ -52,9 +53,11 @@ halim-pro/
     page.tsx          # home page (assembles sections)
   components/
     Nav.tsx / .css    # sticky nav with scroll state
-    Hero.tsx / .css   # full-height hero with grid animation
-    Projects.tsx/.css # three live projects (LeadSignal, CashRunway, EdgePulse)
-    Work.tsx / .css   # client work (عتاد, Highspire, Peaky Scouts)
+    Hero.tsx / .css   # hero with headline, stats and the signal line
+    SignalLine.tsx    # animated entropy-to-agency SVG (deterministic, seeded)
+    Projects.tsx/.css # live products (LeadSignal, CashRunway, EdgePulse)
+    Work.tsx / .css   # client work and case studies
+    Workflows.tsx/.css# agents and automations
     About.tsx / .css  # bio + three pillars
     Contact.tsx / .css# CTA section
     Footer.tsx / .css # links + copyright

@@ -29,8 +29,9 @@ export default function Contact() {
 
         <AnimateIn delay={0.2}>
           <p className={styles.sub}>
-            Available for workflow automation, app integrations, and ETL projects. No calls required.
-            Email works fine — I respond within 24 hours.
+            Taking on select AI agent and automation projects. Email me the process that eats
+            your team&apos;s time: what comes in, what has to happen, where it should end up.
+            I reply within 24 hours. Async-first, calls on request.
           </p>
         </AnimateIn>
 
@@ -56,7 +57,7 @@ export default function Contact() {
 
         <AnimateIn delay={0.4}>
           <div className={styles.note}>
-            Async-first. Text-based. Cairo (GMT+2). Available immediately.
+            Async-first · Cairo, Egypt · Select projects
           </div>
         </AnimateIn>
       </div>

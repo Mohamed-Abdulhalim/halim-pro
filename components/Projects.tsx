@@ -7,7 +7,7 @@ const projects = [
     id: 'leadsignal',
     name: 'LeadSignal',
     tagline: 'B2B lead intelligence, globally verified.',
-    desc: 'A production lead database with 346K+ phone-verified records built on a fully automated scrape → clean → enrich → push pipeline. Includes 11K+ programmatic SEO pages and a self-service search interface.',
+    desc: 'A production lead database with 346K+ phone-verified records fed by a fully automated scrape, clean, enrich, and push pipeline. Includes 11K+ programmatic SEO pages and a self-service search interface.',
     stack: ['Python', 'Supabase', 'GitHub Actions', 'Next.js', 'Playwright'],
     link: 'https://leadsignal.halim.pro',
     accent: 'teal',
@@ -27,7 +27,7 @@ const projects = [
     id: 'edgepulse',
     name: 'EdgePulse',
     tagline: 'Commodity intelligence dashboard.',
-    desc: 'A Flask-based market intelligence tool with automated commodity forecasting, price delta tracking, and a 294-entry backtested track record. Framed as a consulting portfolio piece, not a signal product.',
+    desc: 'A Flask-based market intelligence tool with automated commodity forecasting, price delta tracking, and a 294-entry backtested track record. Built as a forecasting and data-engineering showcase, not a trading signal product.',
     stack: ['Flask', 'Python', 'yfinance', 'Vercel', 'Supabase'],
     link: 'https://edgepulse.halim.pro',
     accent: 'amber',
@@ -36,9 +36,9 @@ const projects = [
 ]
 
 const accentColors: Record<string, { border: string; glow: string; text: string; bg: string }> = {
-  teal:  { border: 'rgba(78,205,196,0.25)',  glow: 'rgba(78,205,196,0.06)',  text: '#4ecdc4', bg: 'rgba(78,205,196,0.08)' },
-  blue:  { border: 'rgba(56,139,255,0.25)',  glow: 'rgba(56,139,255,0.06)',  text: '#5b9cf6', bg: 'rgba(56,139,255,0.08)' },
-  amber: { border: 'rgba(245,166,35,0.25)',  glow: 'rgba(245,166,35,0.06)',  text: '#f5a623', bg: 'rgba(245,166,35,0.08)' },
+  teal:  { border: 'rgba(232,68,15,0.28)',  glow: 'rgba(232,68,15,0.06)',  text: 'var(--accent)', bg: 'rgba(232,68,15,0.08)' },
+  blue:  { border: 'rgba(47,111,106,0.30)', glow: 'rgba(47,111,106,0.06)', text: 'var(--teal)',   bg: 'rgba(47,111,106,0.08)' },
+  amber: { border: 'rgba(168,112,26,0.30)', glow: 'rgba(168,112,26,0.06)', text: 'var(--amber)',  bg: 'rgba(168,112,26,0.08)' },
 }
 
 export default function Projects() {
@@ -55,8 +55,8 @@ export default function Projects() {
       <div className={styles.inner}>
         <AnimateIn>
           <div className={styles.header}>
-            <span className={styles.label}>// live projects</span>
-            <h2 className={styles.title}>Things I built that run in production.</h2>
+            <span className={styles.label}>// products i built and run</span>
+            <h2 className={styles.title}>Live in production, not a demo.</h2>
           </div>
         </AnimateIn>
         <div className={styles.grid}>

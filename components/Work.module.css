@@ -19,7 +19,7 @@
 .title {
   font-family: var(--display);
   font-size: clamp(22px, 3.5vw, 36px);
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text);
   letter-spacing: -0.8px;
 }
@@ -81,15 +81,15 @@
 }
 
 .completed {
-  background: rgba(78,205,196,0.1);
-  color: #4ecdc4;
-  border: 1px solid rgba(78,205,196,0.2);
+  background: var(--teal-dim);
+  color: var(--teal);
+  border: 1px solid var(--teal-dim);
 }
 
 .case_study {
-  background: rgba(200,245,100,0.08);
+  background: rgba(232,68,15,0.08);
   color: var(--accent);
-  border: 1px solid rgba(200,245,100,0.2);
+  border: 1px solid rgba(232,68,15,0.2);
 }
 
 .desc {

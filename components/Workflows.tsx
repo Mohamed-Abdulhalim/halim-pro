@@ -3,46 +3,39 @@ import AnimateIn from './AnimateIn'
 
 const workflows = [
   {
-    name: 'Job Market Intelligence Pipeline',
-    tagline: 'Raw listings in, categorized market signal out.',
-    desc: 'Scheduled pipeline pulls fresh listings, deduplicates by company + title, then runs each batch through an LLM classifier that tags category, top skills, and spam/anomaly flags. Results land in a running dataset and roll up into a weekly digest email with category breakdowns.',
-    stack: ['n8n', 'Gemini', 'Google Sheets', 'Gmail API'],
-    metrics: ['AI-categorized', 'anomaly detection', 'weekly digest'],
-  },
-  {
-    name: 'Lead Intelligence Pipeline',
-    tagline: 'Inbound leads enriched and briefed automatically.',
-    desc: 'Form submission triggers contact enrichment via Hunter.io, a recent-news lookup on the company, and an LLM-generated outreach angle tailored to that news. Everything lands in a CRM record and an internal email brief, ready to send with zero manual research.',
-    stack: ['n8n', 'Hunter.io', 'Groq', 'Notion', 'Gmail API'],
-    metrics: ['auto-enriched', 'news-aware', 'zero research time'],
-  },
-  {
-    name: 'Client Onboarding Automation',
-    tagline: 'New client intake without the back-and-forth.',
-    desc: 'Form submission triggers a full onboarding sequence: CRM record creation, an AI-drafted personalized welcome email, and an auto-scheduled kickoff call on the calendar with the client pre-attached. One submission, zero manual coordination.',
-    stack: ['n8n', 'Notion', 'Gemini', 'Google Calendar', 'Gmail API'],
-    metrics: ['single trigger', 'auto-scheduled', 'no human steps'],
-  },
-  {
-    name: 'Healthcare Operations System',
-    tagline: '7-scenario Make.com orchestration for a clinic.',
-    desc: 'Built 7 coordinated Make.com scenarios handling appointment scheduling, patient follow-ups, staff notifications, and reporting. Replaced a fully manual operations workflow.',
-    stack: ['Make.com', 'Google Sheets', 'Gmail', 'WhatsApp'],
-    metrics: ['7 scenarios', 'fully automated', 'ops replacement'],
-  },
-  {
     name: 'RAG Chatbot on Product Catalogue',
-    tagline: 'Ask the catalogue anything, get instant answers.',
-    desc: 'Trained a retrieval-augmented chatbot on a client equipment catalogue using Supabase pgvector for vector storage, Ollama nomic-embed-text for embeddings, and Groq for inference. Deployed and verified in production.',
+    tagline: 'Ask the catalogue anything, get grounded answers.',
+    desc: 'Retrieval-augmented chatbot over a client equipment catalogue. Supabase pgvector for vector storage, Ollama nomic-embed-text for embeddings, and Groq for inference. Answers come from the catalogue itself, not from the model guessing. Deployed and verified in production.',
     stack: ['Supabase pgvector', 'Ollama', 'Groq', 'Python'],
     metrics: ['RAG pipeline', 'vector search', 'production deployed'],
   },
   {
-    name: 'Visitor Tracking Pixel',
-    tagline: 'Know when someone views your portfolio.',
-    desc: 'A 1x1 tracking pixel embedded in halim.pro fires a webhook on every page load. n8n captures visitor IP, referrer, and user agent, then sends an instant email notification.',
-    stack: ['n8n', 'Next.js', 'Gmail API', 'Webhooks'],
-    metrics: ['real-time', 'zero dependencies', 'self-built'],
+    name: 'Lead Intelligence Pipeline',
+    tagline: 'Inbound leads enriched and briefed automatically.',
+    desc: 'A form submission triggers contact enrichment via Hunter.io, a recent-news lookup on the company, and an LLM-generated outreach angle tailored to that news. Everything lands in a CRM record and an internal email brief, ready to send with no manual research.',
+    stack: ['n8n', 'Hunter.io', 'Groq', 'Notion', 'Gmail API'],
+    metrics: ['auto-enriched', 'news-aware', 'zero research time'],
+  },
+  {
+    name: 'Job Market Intelligence Pipeline',
+    tagline: 'Raw listings in, categorized market signal out.',
+    desc: 'Scheduled pipeline pulls fresh listings, deduplicates by company and title, then runs each batch through an LLM classifier that tags category, top skills, and spam or anomaly flags. Results roll up into a weekly digest email with category breakdowns.',
+    stack: ['n8n', 'Gemini', 'Google Sheets', 'Gmail API'],
+    metrics: ['AI-categorized', 'anomaly detection', 'weekly digest'],
+  },
+  {
+    name: 'Healthcare Operations System',
+    tagline: '7-scenario Make.com orchestration for a clinic.',
+    desc: 'Seven coordinated Make.com scenarios handling appointment scheduling, patient follow-ups, staff notifications, and reporting. Replaced a fully manual operations workflow.',
+    stack: ['Make.com', 'Google Sheets', 'Gmail', 'WhatsApp'],
+    metrics: ['7 scenarios', 'fully automated', 'ops replacement'],
+  },
+  {
+    name: 'Client Onboarding Automation',
+    tagline: 'New client intake without the back-and-forth.',
+    desc: 'One form submission runs the full onboarding sequence: CRM record creation, an AI-drafted personalized welcome email, and a kickoff call scheduled on the calendar with the client already invited. No manual coordination.',
+    stack: ['n8n', 'Notion', 'Gemini', 'Google Calendar', 'Gmail API'],
+    metrics: ['single trigger', 'auto-scheduled', 'no human steps'],
   },
 ]
 
@@ -52,8 +45,8 @@ export default function Workflows() {
       <div className={styles.inner}>
         <AnimateIn>
           <div className={styles.header}>
-            <span className={styles.label}>// workflows</span>
-            <h2 className={styles.title}>Automations I've designed and shipped.</h2>
+            <span className={styles.label}>// agents &amp; workflows</span>
+            <h2 className={styles.title}>Agents and automations I've designed and shipped.</h2>
           </div>
         </AnimateIn>
         <div className={styles.grid}>
@@ -76,6 +69,17 @@ export default function Workflows() {
               </div>
             </AnimateIn>
           ))}
+          <AnimateIn delay={workflows.length * 0.08}>
+            <a href="#contact" className={`${styles.card} ${styles.ctaCard}`}>
+              <span className={styles.ctaLabel}>// next build</span>
+              <div className={styles.ctaTitle}>Your workflow goes here.</div>
+              <p className={styles.desc}>
+                Tell me what comes in, what has to happen, and where it should end up.
+                I&apos;ll reply with how I&apos;d automate it.
+              </p>
+              <span className={styles.ctaLink}>describe your problem →</span>
+            </a>
+          </AnimateIn>
         </div>
       </div>
     </section>
