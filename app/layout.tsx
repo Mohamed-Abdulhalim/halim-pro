@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import SmoothScroll from '@/components/SmoothScroll'
 
-const title = 'Mohamed Abdulhalim | AI Agents & Automation Engineer'
+const title = 'Mohamed Abdelhalim | AI Agents & Automation Engineer'
 const description =
   'I build AI agents and automation systems that take the busywork off your team: lead qualification, data pipelines, CRM sync, and RAG over your own documents. Python, n8n, Supabase, LLM APIs. Based in Cairo, working async worldwide.'
 
