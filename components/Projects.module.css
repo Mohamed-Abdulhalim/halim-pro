@@ -88,17 +88,17 @@
   transform: translate(2px, -2px);
 }
 .tagline {
-  font-family: var(--mono);
-  font-size: 12px;
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--text-2);
   font-style: italic;
   line-height: 1.5;
 }
 .desc {
-  font-family: var(--mono);
-  font-size: 12px;
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--text-2);
-  line-height: 1.8;
+  line-height: 1.65;
   flex: 1;
   display: -webkit-box;
   -webkit-line-clamp: 5;

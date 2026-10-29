@@ -6,33 +6,37 @@ const work = [
     client: 'Education Consultancy Client',
     role: 'AI Study-Abroad Advisor Agent',
     platform: 'n8n',
-    desc: 'Built a conversational AI agent that qualifies inbound student leads over chat (nationality, qualifications, program level, budget, and timeline) through natural back-and-forth rather than a rigid form. Structured field extraction runs in parallel, auto-classifies lead heat, logs everything to a live sheet, and hands hot leads straight to a human via instant WhatsApp alert.',
+    outcome: 'About 50 student leads a week get an instant reply, 24/7, with no staff answering. Hot leads reach a human on WhatsApp the moment they qualify.',
+    desc: 'A conversational AI agent qualifies leads over chat (nationality, qualifications, program level, budget, and timeline) through natural back-and-forth rather than a rigid form. Structured field extraction runs in parallel, auto-classifies lead heat, and logs everything to a live sheet.',
     tags: ['n8n', 'AI Agent', 'Information Extraction', 'WhatsApp', 'Lead Scoring'],
-    status: 'case study',
+    status: 'completed',
   },
   {
-    client: 'Peaky Scouts / Datalytics',
+    client: 'People Compass · Recruitment Agency',
     role: 'Candidate Routing Automation',
     platform: 'Google Sheets',
-    desc: 'Built a Google Apps Script automation that eliminated a manual nightly process entirely: candidate routing between a Master System sheet and multiple client sheets, running unattended on schedule. Zero human steps remaining.',
+    outcome: 'A manual job someone ran every night is gone. Candidate routing now runs unattended, with zero human steps.',
+    desc: 'A Google Apps Script automation routes candidates between a Master System sheet and multiple client sheets on a schedule.',
     tags: ['Google Apps Script', 'Workflow Automation', 'Sheets'],
     status: 'completed',
   },
   {
-    client: 'Highspire / People Compass',
+    client: 'People Compass · Repeat Engagement',
     role: 'Google Apps Script Portal',
     platform: 'Google Workspace',
-    desc: 'Designed and built a hierarchical role-based portal from scratch, serving 300+ users across a five-tier organizational structure. Custom permission system, dynamic dashboards, and multi-sheet data orchestration, all in Google Apps Script.',
+    outcome: '300+ people across five organizational tiers work from one portal, each seeing exactly what their role allows.',
+    desc: 'A hierarchical role-based portal built from scratch, with a custom permission system, dynamic dashboards, and multi-sheet data orchestration, all in Google Apps Script.',
     tags: ['Google Apps Script', 'RBAC', 'Automation', '300+ users'],
     status: 'completed',
   },
   {
-    client: 'E-commerce Client',
+    client: 'E-commerce Fulfillment',
     role: 'Zero-Touch Fulfillment Automation',
     platform: 'n8n',
-    desc: 'Built an event-driven orchestration layer across Shopify, Stripe, and HubSpot. Handles payment verification, automatic retry on failed payments, CRM upsert logic, and warehouse Slack alerts. No human touchpoints in the primary path, from paid order to warehouse notification.',
+    outcome: 'From paid order to warehouse alert with no human in the primary path, including recovery when a payment fails.',
+    desc: 'An event-driven orchestration layer across Shopify, Stripe, and HubSpot. Handles payment verification, automatic retry on failed payments, CRM upsert logic, and warehouse Slack alerts.',
     tags: ['n8n', 'Shopify', 'Stripe', 'HubSpot', 'Webhook Automation'],
-    status: 'case study',
+    status: 'demo build',
   },
 ]
 
@@ -63,6 +67,10 @@ export default function Work() {
                       {w.status}
                     </span>
                   </div>
+                  <p className={styles.outcome}>
+                    <span className={styles.outcomeLabel}>result</span>
+                    {w.outcome}
+                  </p>
                   <p className={styles.desc}>{w.desc}</p>
                   <div className={styles.tags}>
                     {w.tags.map(t => (
