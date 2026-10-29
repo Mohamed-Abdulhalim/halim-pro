@@ -6,7 +6,7 @@ import MagneticButton from './MagneticButton'
 import AnimateIn from './AnimateIn'
 
 const EMAIL = 'mohamed@halim.pro'
-const WEBHOOK = process.env.NEXT_PUBLIC_CONTACT_WEBHOOK || ''
+const WEBHOOK = process.env.NEXT_PUBLIC_CONTACT_WEBHOOK || 'https://halim99-n8n.hf.space/webhook/halim-contact-form'
 
 const frequencies = [
   'Several times a day',
