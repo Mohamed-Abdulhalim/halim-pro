@@ -9,7 +9,7 @@ const work = [
     outcome: 'About 50 student leads a week get an instant reply, 24/7, with no staff answering. Hot leads reach a human on WhatsApp the moment they qualify.',
     desc: 'A conversational AI agent qualifies leads over chat (nationality, qualifications, program level, budget, and timeline) through natural back-and-forth rather than a rigid form. Structured field extraction runs in parallel, auto-classifies lead heat, and logs everything to a live sheet.',
     tags: ['n8n', 'AI Agent', 'Information Extraction', 'WhatsApp', 'Lead Scoring'],
-    status: 'case study',
+    status: 'completed',
   },
   {
     client: 'People Compass · Recruitment Agency',
