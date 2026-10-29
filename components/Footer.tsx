@@ -9,7 +9,7 @@ export default function Footer() {
         <div className={styles.inner}>
           <div className={styles.left}>
             <span className={styles.logo}>halim<span>.pro</span></span>
-            <span className={styles.copy}>© {year} Mohamed Abdulhalim</span>
+            <span className={styles.copy}>© {year} Mohamed Abdelhalim</span>
           </div>
           <div className={styles.right}>
             <a href="https://github.com/Mohamed-Abdulhalim" target="_blank" rel="noopener noreferrer">GitHub</a>
