@@ -37,9 +37,9 @@ export default function Nav() {
           halim<span>.pro</span>
         </a>
         <div className={styles.links}>
+          <a href="#work" onClick={(e) => { e.preventDefault(); scrollTo('#work') }}>client work</a>
           <a href="#projects" onClick={(e) => { e.preventDefault(); scrollTo('#projects') }}>projects</a>
           <a href="#workflows" onClick={(e) => { e.preventDefault(); scrollTo('#workflows') }}>workflows</a>
-          <a href="#work" onClick={(e) => { e.preventDefault(); scrollTo('#work') }}>work</a>
           <a href="#about" onClick={(e) => { e.preventDefault(); scrollTo('#about') }}>about</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo('#contact') }} className={styles.cta}>get in touch</a>
           <div className={styles.themeWrap}><ThemeToggle /></div>
@@ -57,9 +57,9 @@ export default function Nav() {
         />
       </nav>
       <div className={`${styles.mobileMenu} ${mobileOpen ? styles.active : ''}`}>
+        <a href="#work" onClick={(e) => { e.preventDefault(); scrollTo('#work') }}>client work</a>
         <a href="#projects" onClick={(e) => { e.preventDefault(); scrollTo('#projects') }}>projects</a>
         <a href="#workflows" onClick={(e) => { e.preventDefault(); scrollTo('#workflows') }}>workflows</a>
-        <a href="#work" onClick={(e) => { e.preventDefault(); scrollTo('#work') }}>work</a>
         <a href="#about" onClick={(e) => { e.preventDefault(); scrollTo('#about') }}>about</a>
         <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo('#contact') }} className={styles.cta}>get in touch</a>
         <div style={{ marginTop: '1rem' }}><ThemeToggle /></div>

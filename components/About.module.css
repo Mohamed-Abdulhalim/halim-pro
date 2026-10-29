@@ -32,10 +32,10 @@
 }
 
 .bio {
-  font-family: var(--mono);
-  font-size: 12px;
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--text-2);
-  line-height: 1.9;
+  line-height: 1.65;
   margin-bottom: 1rem;
 }
 
@@ -98,10 +98,10 @@
 }
 
 .pillarBody {
-  font-family: var(--mono);
-  font-size: 12px;
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--text-2);
-  line-height: 1.8;
+  line-height: 1.65;
 }
 
 @media (max-width: 900px) {

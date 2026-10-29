@@ -46,17 +46,17 @@
   letter-spacing: -0.3px;
 }
 .tagline {
-  font-family: var(--mono);
-  font-size: 12px;
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--accent);
   font-style: italic;
   line-height: 1.5;
 }
 .desc {
-  font-family: var(--mono);
-  font-size: 12px;
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--text-2);
-  line-height: 1.8;
+  line-height: 1.65;
   flex: 1;
 }
 .metrics {

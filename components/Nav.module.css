@@ -80,7 +80,7 @@
   background: none;
   border: none;
   padding: 4px;
-  cursor: none;
+  cursor: pointer;
 }
 .hamburger span {
   display: block;

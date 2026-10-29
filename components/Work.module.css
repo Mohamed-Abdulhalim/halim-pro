@@ -92,11 +92,39 @@
   border: 1px solid rgba(232,68,15,0.2);
 }
 
-.desc {
+.demo_build {
+  background: var(--amber-dim);
+  color: var(--amber);
+  border: 1px solid var(--amber-dim);
+}
+
+.outcome {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.5;
+  padding-left: 14px;
+  border-left: 2px solid var(--accent);
+  margin: 4px 0 2px;
+}
+
+.outcomeLabel {
+  display: block;
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.desc {
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--text-2);
-  line-height: 1.9;
+  line-height: 1.65;
 }
 
 .note {
