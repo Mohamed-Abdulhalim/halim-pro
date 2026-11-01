@@ -38,7 +38,7 @@ const projects = [
     name: 'Estate Readiness Check',
     tagline: 'Cross-border estate readiness for Gulf-based expat investors.',
     desc: 'A free checker that shows Gulf-based expats where their family would get stuck: US estate tax, UK inheritance tax, and frozen UAE accounts. Paired with a paid Family Access File.',
-    stack: ['Next.js', 'Vercel', 'Polar', 'Stripe'],
+    stack: ['Next.js', 'Vercel', 'Polar'],
     link: 'https://check.halim.pro',
     accent: 'blue',
     metrics: ['free checker', 'US, UK and UAE rules', 'paid pre-order'],
