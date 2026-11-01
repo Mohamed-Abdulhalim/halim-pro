@@ -33,6 +33,26 @@ const projects = [
     accent: 'amber',
     metrics: ['294 track records', '5 live signals', 'auto-refresh'],
   },
+  {
+    id: 'check',
+    name: 'Estate Readiness Check',
+    tagline: 'Cross-border estate readiness for Gulf-based expat investors.',
+    desc: 'A free checker that shows Gulf-based expats where their family would get stuck: US estate tax, UK inheritance tax, and frozen UAE accounts. Paired with a paid Family Access File.',
+    stack: ['Next.js', 'Vercel', 'Polar'],
+    link: 'https://check.halim.pro',
+    accent: 'blue',
+    metrics: ['free checker', 'US, UK and UAE rules', 'paid pre-order'],
+  },
+  {
+    id: 'farq',
+    name: 'Farq',
+    tagline: 'Egyptian phone prices, compared across stores.',
+    desc: 'An Arabic-first price comparison site for mobile phones in Egypt. Scrapers pull live prices from the major local stores into one database, and each phone gets its own page so buyers can see who is cheapest.',
+    stack: ['Next.js', 'Python', 'Supabase', 'Vercel'],
+    link: 'https://farq.halim.pro',
+    accent: 'teal',
+    metrics: ['10 Egyptian stores', 'Arabic-first', 'per-phone pages'],
+  },
 ]
 
 const accentColors: Record<string, { border: string; glow: string; text: string; bg: string }> = {

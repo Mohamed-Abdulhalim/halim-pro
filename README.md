@@ -55,7 +55,7 @@ halim-pro/
     Nav.tsx / .css    # sticky nav with scroll state
     Hero.tsx / .css   # hero with headline, stats and the signal line
     SignalLine.tsx    # animated entropy-to-agency SVG (deterministic, seeded)
-    Projects.tsx/.css # live products (LeadSignal, CashRunway, EdgePulse)
+    Projects.tsx/.css # live products (LeadSignal, CashRunway, EdgePulse, Estate Readiness Check, Farq)
     Work.tsx / .css   # client work and case studies
     Workflows.tsx/.css# agents and automations
     About.tsx / .css  # bio + three pillars
