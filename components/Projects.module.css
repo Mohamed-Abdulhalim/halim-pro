@@ -21,13 +21,15 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
   border-radius: 4px;
   overflow: hidden;
 }
+.grid > * { grid-column: span 2; }
+.grid > *:nth-child(n+4) { grid-column: span 3; }
 .card {
   height: 100%;
   min-height: 320px;
@@ -137,5 +139,6 @@
 .tag::before { content: '#'; opacity: 0.4; }
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; }
+  .grid > *, .grid > *:nth-child(n+4) { grid-column: span 1; }
   .section { padding: 4rem 1.25rem; }
 }
