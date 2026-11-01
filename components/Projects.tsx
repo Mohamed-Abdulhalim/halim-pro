@@ -51,7 +51,7 @@ const projects = [
     stack: ['Next.js', 'Python', 'Supabase', 'Vercel'],
     link: 'https://farq.halim.pro',
     accent: 'teal',
-    metrics: ['5 Egyptian stores', 'Arabic-first', 'per-phone pages'],
+    metrics: ['10 Egyptian stores', 'Arabic-first', 'per-phone pages'],
   },
 ]
 
